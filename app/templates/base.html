@@ -1,0 +1,26 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{title}} - microblog</title>
+    {% else %}
+    <title>microblog</title>
+    {% endif %}
+  </head>
+  <body>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <span style="color: red;">
+                <ul>
+                    {% for message in messages %}
+                        <li>{{ message }} </li>
+                    {% endfor %}
+                </ul>
+            </span>
+        {% endif %}
+    {% endwith %}
+    <div class='main'>
+        {% block content %}
+        {% endblock %}
+    </div>
+  </body>
+</html>
