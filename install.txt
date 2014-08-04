@@ -1,0 +1,17 @@
+pip install flask
+pip install flask-login
+pip install flask-mail
+pip install flask-wtf
+pip install Flask-Script
+pip install Flask-Migrate
+pip install requests
+pip install MySQL-python
+
+# Have to use modded flask-sqlalchemy
+pip install https://github.com/cbronazc/flask-sqlalchemy/tarball/master
+
+# if your on osx and it errors out run this: export CFLAGS=-Qunused-arguments export CPPFLAGS=-Qunused-arguments
+
+# optional
+pip install beaker
+pip install python-memcached
