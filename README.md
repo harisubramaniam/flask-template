@@ -19,7 +19,6 @@
     --project_name
         |--lib/
         |--migrations/
-        |--tmp/
         |--app/
             |--models.py
             |--forms.py
@@ -27,12 +26,16 @@
             |--templates
                |--base.html
                |--index.html
-        |--static
-            |--style.css
-            |--main.js
-            |--images/
-        |--config.py
+            |--static
+                |--style.css
+                |--main.js
+                |--images/
+        |--configs
+            |--db.txt
+            |--prod.py
+            |--default.py
         |--manage.py
         |--run.py
         |--requirements.txt
         |--README.md
+        |--app.wsgi
