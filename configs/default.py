@@ -8,7 +8,7 @@ db_creds = db_file.read().rstrip('\n')
 db_file.close()
 
 class CommonConfig(object):
-    SECRET_KEY = 'abc987'
+    SECRET_KEY = 'abc973'
     SQLALCHEMY_DATABASE_URI = db_creds
     DEBUG = True
     CACHE_TIME = 60 # 1 minute

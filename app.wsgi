@@ -2,24 +2,18 @@ import os, sys
 import logging
 from logging.handlers import RotatingFileHandler
 
-#
-# Look for the "Change this" lines. 
-# You may need to change /dev/ to /live/ in locations as well
-#
-
-
 # Change this
-# os.environ['APP_NAME'] = '/mnt/content.azcentral.com/dev/www.azcentral.com/htdocs/app_name/configs/prod.py'
+# os.environ['APP_NAME'] = '/mnt/content.azcentral.com/live/wsgi.azcentral.com/app_name/configs/prod.py'
 
 # Activate your virtual env
 
 #Change this
-activate_env=os.path.expanduser("/mnt/content.azcentral.com/dev/www.azcentral.com/htdocs/app_name/fca/bin/activate_this.py")
+activate_env=os.path.expanduser("/mnt/content.azcentral.com/live/wsgi.azcentral.com/app_name/fca/bin/activate_this.py")
 execfile(activate_env, dict(__file__=activate_env))
 
 # Change this
 # Add the app's directory to the PYTHONPATH
-sys.path.append('/mnt/content.azcentral.com/dev/www.azcentral.com/htdocs/app_name/')
+sys.path.append('/mnt/content.azcentral.com/live/wsgi.azcentral.com/app_name/')
 from run import app as application
 
 #Change this

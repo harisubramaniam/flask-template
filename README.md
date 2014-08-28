@@ -2,14 +2,15 @@
 
 * `mkvirtualenv flask`
 * Run all the pip install commands in requirements.txt
-* Define you db in config.py
+* Define your db in db.txt
 * Setup your models
 * `python manage.py db init`
 * `python manage.py db migrate`
 * `python manage.py db upgrade`
 * `python run.py`
 * Setup your views
-
+* change the AP_ENV in __init__.py and in app.wsgi
+* adjust app.wsgi
 
 
 
