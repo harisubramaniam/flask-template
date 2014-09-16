@@ -6,3 +6,4 @@ flask
 configs/db.txt
 configs/db_prod.txt
 configs/prod.py
+*.DS_Store
