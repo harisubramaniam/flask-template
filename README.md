@@ -11,7 +11,7 @@
 * Setup your views
 * change the AP_ENV in __init__.py and in app.wsgi
 * adjust app.wsgi
-
+* Add MONITOR_ID in default.py from flaskmonitor
 
 
 #Layout

@@ -21,15 +21,6 @@ manager = Manager(app)
 from app import models, views
 from app.common import monitor
 
-# Error handlers
-@app.errorhandler(404)
-def not_found(error):
-    return jsonify({'error':'Not found'}), 404
-
-@app.errorhandler(500)
-def error(error):
-    return jsonify({'error':'Something went wrong'}), 500
-
 
 # Error emails
 # if not app.debug:
