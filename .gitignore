@@ -4,4 +4,5 @@ app.db
 search.db
 flask
 configs/db.txt
-
+configs/prod_db.txt
+configs/prod.py

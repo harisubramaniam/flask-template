@@ -24,3 +24,6 @@ class CommonConfig(object):
     # MAIL_USERNAME = ''
     # MAIL_PASSWORD = ''
 
+
+    # Add this app to flaskmonitor.azcentral.com, and place the site.id here
+    # MONITOR_ID = 999

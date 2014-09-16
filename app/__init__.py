@@ -19,7 +19,7 @@ migrate = Migrate(app, db)
 manager = Manager(app)
 
 from app import models, views
-
+from app.common import monitor
 
 # Error handlers
 @app.errorhandler(404)
