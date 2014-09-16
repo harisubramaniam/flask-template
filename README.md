@@ -12,6 +12,7 @@
 * change the AP_ENV in __init__.py and in app.wsgi
 * adjust app.wsgi
 * Add MONITOR_ID in default.py from flaskmonitor
+* Adjust error_emailer.py for error emails (2 spots), then uncomment the section in __init__.py
 
 
 #Layout
