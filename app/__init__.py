@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask.ext.script import Manager
 from flask.ext.migrate import Migrate
@@ -6,6 +6,7 @@ from flask.ext.migrate import Migrate
 app = Flask(__name__)
 app.config.from_object('configs.default.CommonConfig')
 app.config.from_envvar('APP_NAME', silent=True)
+
 
 # Hacked Flask-SqlAlchemy to support NullPool. You must pip install from cbronazc's fork as documented in install.txt
 class MySQLAlchemy(SQLAlchemy):

@@ -1,10 +1,10 @@
-from flask import render_template, flash, redirect, session, url_for, request, g, Response
-from app import app, db
+from flask import render_template, flash
+from app import app
 
 
-@app.route('/', methods = ['GET'])
+@app.route('/', methods=['GET'])
 def index():
-  return render_template('index.html', title='Index')
+    return render_template('index.html', title='Index')
 
 
 def flash_errors(form):
